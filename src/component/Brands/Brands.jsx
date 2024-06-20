@@ -29,7 +29,7 @@ export default function Brands() {
     />: <div className='row'>
         {data?.data?.data.map((ele)=><div key={ele.id} className="col-sm-6 col-md-4 col-lg-2">
           <div className="brands">
-            <Link to={'brandDetails/'+ ele._id }>
+            <Link >
               <img src={ele.image} className='w-100' alt={ele.name} />
               <h2 className='text-center text-main' >{ele.name}</h2>
             </Link>
