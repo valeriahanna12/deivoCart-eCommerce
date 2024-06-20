@@ -9,7 +9,7 @@ export default function OnlinePayment() {
   async function onlinePayment(id,value){
     const{data}=await onlineOrder(
       id,
-      "http://localhost:3000",
+      "https://deivo-cart-e-commerce.vercel.app",
       value
     );
     if(data?.status === "success"){
